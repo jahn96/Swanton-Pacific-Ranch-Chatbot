@@ -1,0 +1,44 @@
+@prefix schema: <http://schema.org/> .
+@prefix : <http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix path: <http://www.ontotext.com/path#> .
+@prefix feature: <http://swanton_pacific_ranch_kg/features#> .
+@prefix plants: <http://www.linkeddatatools.com/plants#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix sample: <http://bedrock/> .
+@prefix food: <http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#> .
+@prefix ranch: <http://www.linkeddatatools.com/ranch#> .
+@prefix ex: <http://marriage/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix region: <http://www.country-regions.fake/> .
+@prefix relations: <http://www.llinkeddatatools.com/relations#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix spr: <http://swantonpacificranch.org/> .
+
+<http://www.linkeddatatools.com/spr#location> a owl:Class;
+  rdfs:subClassOf <http://www.linkeddatatools.com/spr#SwantonPacificRanchKnowledge>;
+  rdfs:comment "Location related to Swanton Pacific Ranch.";
+  rdfs:label "Location" .
+
+<http://www.linkeddatatools.com/spr#SwantonPacificRanchKnowledge> a owl:Class;
+  rdfs:comment "The class of all information related to Swanton Pacific Ranch.";
+  rdfs:label "Swanton Pacific Ranch Knowledge" .
+
+<http://www.linkeddatatools.com/spr#SwantonPacificRanch> a <http://www.linkeddatatools.com/spr#location>;
+  <http://www.linkeddatatools.com/relations#has> "3,200 acres" .
+
+spr:Picasso rdfs:label "location"@en .
+
+spr:Location rdfs:subClassOf "spr:SwantonPacificRanchKnowledge"@en;
+  rdfs:label "Locations relevant to Swanton Pacific Ranch"@en .
+
+<http://swantonpacificranch.org/Swanton%20Pacific%20Ranch> a "spr:Location"@en;
+  spr:is "a 3,200-acre ranch"@en .

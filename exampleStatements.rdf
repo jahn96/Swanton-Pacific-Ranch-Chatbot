@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#"
+	xmlns:schema="http://schema.org/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:path="http://www.ontotext.com/path#"
+	xmlns:feature="http://swanton_pacific_ranch_kg/features#"
+	xmlns:plants="http://www.linkeddatatools.com/plants#"
+	xmlns:vin="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:rdf4j="http://rdf4j.org/schema/rdf4j#"
+	xmlns:wgs="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	xmlns:gn="http://www.geonames.org/ontology#"
+	xmlns:sample="http://bedrock/"
+	xmlns:food="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#"
+	xmlns:ranch="http://www.linkeddatatools.com/ranch#"
+	xmlns:ex="http://marriage/"
+	xmlns:spr="http://www.spr.com/spr#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:region="http://www.country-regions.fake/"
+	xmlns:relations="http://www.llinkeddatatools.com/relations#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="http://www.linkeddatatools.com/spr#location">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.linkeddatatools.com/spr#SwantonPacificRanchKnowledge">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.linkeddatatools.com/spr#SwantonPacificRanch">
+	<rdf:type rdf:resource="http://www.linkeddatatools.com/spr#location"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.linkeddatatools.com/spr#location">
+	<rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/spr#SwantonPacificRanchKnowledge"/>
+	<rdfs:comment>Location related to Swanton Pacific Ranch.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.linkeddatatools.com/spr#SwantonPacificRanchKnowledge">
+	<rdfs:comment>The class of all information related to Swanton Pacific Ranch.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.linkeddatatools.com/spr#location">
+	<rdfs:label>Location</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.linkeddatatools.com/spr#SwantonPacificRanchKnowledge">
+	<rdfs:label>Swanton Pacific Ranch Knowledge</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.linkeddatatools.com/spr#SwantonPacificRanch">
+	<has xmlns="http://www.linkeddatatools.com/relations#">3,200 acres</has>
+</rdf:Description>
+
+</rdf:RDF>
