@@ -8,8 +8,10 @@ import org.eclipse.rdf4j.model.*;
 import org.eclipse.rdf4j.model.impl.TreeModel;
 import org.eclipse.rdf4j.model.util.ModelBuilder;
 import org.eclipse.rdf4j.model.util.Values;
+import org.eclipse.rdf4j.repository.sail.SailRepository;
 import org.eclipse.rdf4j.rio.RDFFormat;
 import org.eclipse.rdf4j.rio.Rio;
+import org.eclipse.rdf4j.sail.memory.MemoryStore;
 
 import java.io.*;
 
@@ -52,6 +54,10 @@ public class KGModelWrapper {
             instance = new KGModelWrapper(nameSpace, prefix, filename);
         }
         return instance;
+    }
+
+    public Model getKgModel(){
+        return kgModel;
     }
 
     /**
