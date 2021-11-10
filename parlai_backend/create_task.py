@@ -9,7 +9,7 @@ from parlai.core.teachers import register_teacher, DialogTeacher, ParlAIDialogTe
 
 
 # Get data
-worksheet_name = 'SPR QA Training Data'
+worksheet_name = 'data/SPR QA Training Data'
 
 # read tsv file as a list of lists
 with open(worksheet_name + '.tsv', 'r') as read_obj:
