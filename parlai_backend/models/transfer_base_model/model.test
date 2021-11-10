@@ -1,6 +1,0 @@
-test:
-    clen  ctpb  ctps  ctrunc  ctrunclen  exps  exs  llen  loss        lr  ltpb  ltps  \
-   11.29   288 64.99       0          0 5.754   51 35.76 4.768 1.501e-06   912 205.8   
-    ltrunc  ltrunclen   ppl  token_acc  token_em  total_train_updates  tpb   tps  
-         0          0 117.7      .3032         0                   15 1200 270.8
-
