@@ -10,3 +10,9 @@ To update the data in the knowledge graph, you need to export a Turtle file of a
 1. [rdf4j](https://rdf4j.org/documentation/) library (3.7.3) to add or delete data from the database.
 2. [Maven](https://maven.apache.org/) as a build and dependency management tool.
     - Maven works really well with [Intellij](https://www.jetbrains.com/idea/). So, I recommend to use Intellij for your IDE.
+3. [ParlAI](https://parl.ai/docs/tutorial_quick.html#install) should be installed via pip.
+
+
+## TODO
+- [ ] make custom ParlAI model recognized globally
+- [ ] 
