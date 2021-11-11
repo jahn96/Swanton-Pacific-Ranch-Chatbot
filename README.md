@@ -15,4 +15,3 @@ To update the data in the knowledge graph, you need to export a Turtle file of a
 
 ## TODO
 - [ ] make custom ParlAI model recognized globally
-- [ ] 
