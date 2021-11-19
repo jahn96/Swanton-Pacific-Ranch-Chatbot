@@ -49,9 +49,14 @@ public class KGModelWrapper {
         }
     }
 
-    public static KGModelWrapper createInstance(String nameSpace, String prefix, String filename) {
+    public static KGModelWrapper createInstance(String nameSpace, String prefix, String... filename) {
         if(instance == null) {
-            instance = new KGModelWrapper(nameSpace, prefix, filename);
+            if (filename.length != 0){
+                instance = new KGModelWrapper(nameSpace, prefix, filename);
+            }
+            else{
+                instance = new KGModelWrapper(nameSpace, prefix);
+            }
         }
         return instance;
     }

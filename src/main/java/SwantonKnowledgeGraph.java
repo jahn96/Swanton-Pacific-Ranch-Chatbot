@@ -32,11 +32,13 @@ public class SwantonKnowledgeGraph {
               conn.add(model);
 
               // let's check that our data is actually in the database
+              System.out.println("What we have in our database");
               try (RepositoryResult<Statement> result = conn.getStatements(null, null, null)) {
                     for (Statement st: result) {
                           System.out.println("db contains: " + st);
                     }
               }
+              System.out.println("Done at printing what db contains");
         }
     }
 

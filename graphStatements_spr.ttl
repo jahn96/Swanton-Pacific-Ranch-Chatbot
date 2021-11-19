@@ -1,0 +1,26 @@
+@prefix spr: <http://swantonpacificranch.org/> .
+
+spr:Location a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Locations relevant to Swanton Pacific Ranch"@en;
+  <http://www.w3.org/2000/01/rdf-schema#subClassOf> spr:SwantonPacificRanchKnowledge .
+
+<http://swantonpacificranch.org/Swanton%20Pacific%20Ranch> a spr:Location;
+  spr:encompass "rangeland"@en;
+  <http://swantonpacificranch.org/has%20part> "Santa Cruz County"@en;
+  spr:is "a 3,200-acre ranch"@en;
+  <http://swantonpacificranch.org/owned%20and%20operated%20by> "California Polytechnic State University"@en;
+  <http://swantonpacificranch.org/owned%20and%20operated%20for> "research"@en;
+  <http://swantonpacificranch.org/owned%20and%20operated%20in> "sustainable agriculture"@en .
+
+spr:SwantonPacificRanchKnowledge a <http://www.w3.org/2002/07/owl#Class> .
+
+<http://swantonpacificranch.org/a%203,200-acre%20ranch> spr:in "Santa Cruz County"@en;
+  spr:outside "the town"@en .
+
+<http://swantonpacificranch.org/a%20significant%20part> spr:of "the community"@en .
+
+spr:rangeland spr:for "the College"@en .
+
+<http://swantonpacificranch.org/the%20community> spr:of "Swanton"@en .
+
+<http://swantonpacificranch.org/the%20town> spr:of "Davenport"@en .
