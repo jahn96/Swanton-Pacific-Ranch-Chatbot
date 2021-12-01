@@ -13,18 +13,18 @@ Currently, we are using a free version of the GraphDB. Therefore, it's not hoste
 3. [ParlAI](https://parl.ai/docs/tutorial_quick.html#install) should be installed via pip.
 
 ## Usage
-To update the data in the knowledge graph with our wrapper classes,
+**To update the data in the knowledge graph with our wrapper classes,**
 1. Export graph as a Turtle file.
-2. Pass the file to Model.KGModelWrapper as an argument, make changes to the wrapper, and write the model to a turtle file.
+2. Pass its filename to `KGModelWrapper` as an argument, make changes to the wrapper, and write the model to a Turtle file.
    For example,
 ```
-   KGModelWrapper kgModelWrapper = Model.KGModelWrapper.createInstance(nameSpace, prefix, filename);
+   KGModelWrapper kgModelWrapper = KGModelWrapper.createInstance(nameSpace, prefix, filename);
    kgModelWrapper.addStatementToModel("Location", RDF.TYPE, OWL.CLASS);
    kgModelWrapper.writeModel("testStatements.ttl");
 ```
-3. Import the output Turtle file of a graph.
+3. Import the output Turtle file to the knowledge graph using its workbench.
 
-If you want to execute a query to the knowledge graph with our wrapper classes,
+**To execute a query in the knowledge graph with our wrapper classes,**
 1. Create a Swanton knowledge graph instance with a model from KgModelWrapper.
 ```
 Model model = kgModelWrapper.getKgModel();
