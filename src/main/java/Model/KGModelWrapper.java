@@ -1,3 +1,4 @@
+package Model;
 /**
  * Some codes are from https://rdf4j.org/documentation/tutorials/getting-started/
  */
@@ -8,10 +9,8 @@ import org.eclipse.rdf4j.model.*;
 import org.eclipse.rdf4j.model.impl.TreeModel;
 import org.eclipse.rdf4j.model.util.ModelBuilder;
 import org.eclipse.rdf4j.model.util.Values;
-import org.eclipse.rdf4j.repository.sail.SailRepository;
 import org.eclipse.rdf4j.rio.RDFFormat;
 import org.eclipse.rdf4j.rio.Rio;
-import org.eclipse.rdf4j.sail.memory.MemoryStore;
 
 import java.io.*;
 
@@ -39,7 +38,7 @@ public class KGModelWrapper {
             else{
                 kgModel = new TreeModel();
             }
-
+            printStatements();
             nameSpace_ = nameSpace;
             prefix_ = prefix;
         }
@@ -95,30 +94,12 @@ public class KGModelWrapper {
             modelBuilder
                     .setNamespace(prefix_, nameSpace_)
                     .add(prefix_ + ":" + subject, relation, Values.literal((String) object, lan));
-        }
-        else if (object instanceof IRI){
+        } else if (object instanceof IRI) {
             modelBuilder
                     .setNamespace(prefix_, nameSpace_)
                     .add(prefix_ + ":" + subject, relation, object);
         }
 
-        kgModel = modelBuilder.build();
-    }
-
-    public <T> void addStatementToModel (String subject, String relation, T object, String... language) {
-        ModelBuilder modelBuilder = new ModelBuilder(kgModel);
-
-        String lan = language.length > 0 ? language[0] : "en";
-        if (object instanceof String) {
-            modelBuilder
-                    .setNamespace(prefix_, nameSpace_)
-                    .add(prefix_ + ":" + subject, relation, Values.literal((String) object, lan));
-        }
-        else if (object instanceof IRI){
-            modelBuilder
-                    .setNamespace(prefix_, nameSpace_)
-                    .add(prefix_ + ":" + subject, relation, object);
-        }
         kgModel = modelBuilder.build();
     }
 

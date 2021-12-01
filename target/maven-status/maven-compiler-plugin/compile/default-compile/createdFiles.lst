@@ -1,4 +1,4 @@
+KnowledgeGraph/SwantonKnowledgeGraph.class
 main.class
-SwantonKnowledgeGraph.class
-SPR.class
-KGModelWrapper.class
+Model/KGModelWrapper.class
+Model/SPR.class

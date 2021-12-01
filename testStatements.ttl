@@ -1,0 +1,29 @@
+@prefix spr: <http://swantonpacificranch.org/> .
+
+spr:ALBERT_B_SMITH a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Any information about Albert B. Smith"@en;
+  <http://www.w3.org/2000/01/rdf-schema#subClassOf> spr:SwantonPacificRanchKnowledge .
+
+spr:Location a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Locations relevant to Swanton Pacific Ranch"@en;
+  <http://www.w3.org/2000/01/rdf-schema#subClassOf> spr:SwantonPacificRanchKnowledge .
+
+spr:SwantonPacificRanchKnowledge a <http://www.w3.org/2002/07/owl#Class> .
+
+spr:Swanton_Pacific_Ranch a spr:Location;
+  spr:encompass "rangeland"@en;
+  spr:has_part "Santa Cruz County"@en;
+  spr:is spr:a_3200-acre_ranch, "a 3200-acre ranch"@en;
+  spr:operated_by "California Polytechnic State University"@en;
+  spr:operated_for "research"@en;
+  spr:operated_in "sustainable agriculture"@en;
+  spr:owned_by "California Polytechnic State University"@en .
+
+spr:a_3200-acre_ranch spr:in "Santa Cruz County"@en;
+  spr:outside "the town"@en .
+
+spr:a_significant_part spr:of "the community"@en .
+
+spr:rangeland spr:for "the College"@en .
+
+spr:the_town spr:of "Davenport"@en .

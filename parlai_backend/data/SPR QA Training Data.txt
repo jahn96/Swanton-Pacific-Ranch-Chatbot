@@ -1,9 +1,9 @@
 text:How many trees are on Swanton Pacific Ranch?	labels:More than a thousand but less than 10 million. Countless. A gazillion	episode_done:True
 text:How many trees were there before the fires in 2020?	labels:More than a thousand but less than 10 million. Countless. A gazillion	episode_done:True
-text:What is the most common tree species at SPR?	labels:Coast live oak	episode_done:True
-text:How old is the oldest tree at SPR? 	labels:1200 year stem; 5,000 year old roots	episode_done:True
-text:What biome/ecosystem/ecotype covers the greatest area at SPR?	labels:Coastal	episode_done:True
-text:When did Valencia Creek become a part of SPR?	labels:Al Swanton purchased Valencia creek in 1993	episode_done:True
+text:What is the most common tree species at Model.SPR?	labels:Coast live oak	episode_done:True
+text:How old is the oldest tree at Model.SPR? 	labels:1200 year stem; 5,000 year old roots	episode_done:True
+text:What biome/ecosystem/ecotype covers the greatest area at Model.SPR?	labels:Coastal	episode_done:True
+text:When did Valencia Creek become a part of Model.SPR?	labels:Al Swanton purchased Valencia creek in 1993	episode_done:True
 text:How did Cal Poly get Swanton Pacific Ranch?	labels:Swanton Pacific Ranch was donated to Cal Poly by Cal Poly alumnus Al Smith.	episode_done:True
 text:How big is Swanton Pacific Ranch?	labels:Swanton Pacific Ranch is 3200 acres.	episode_done:True
 text:Is Swanton Pacific Ranch open to the public?	labels:No, except during specific times, such as: apple picking in the Fall, Al Smith Days, Cal Poly Days, and Swanton Pacific Railroad Days.	episode_done:True

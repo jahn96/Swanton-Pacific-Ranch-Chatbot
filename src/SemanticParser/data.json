@@ -1,5 +1,6 @@
 {
-    "What county is Swanton Pacific Ranch located in?": "SELECT ?name WHERE { spr:Swanton_Pacific_Ranch spr:in ?name }",
+    "What county is Swanton Pacific Ranch located in?": "SELECT ?name WHERE { spr:Swanton_Pacific_Ranch spr:is ?temp . ?temp spr:in ?name . }",
     "Who owns Swanton Pacific Ranch?": "SELECT ?name WHERE { spr:Swanton_Pacific_Ranch spr:owned_by ?name }",
     "What is the name of the original Land Grant Al Smith wanted to purchase?": "SELECT ?name WHERE {}"
 }
+
